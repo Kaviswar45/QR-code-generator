@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  background: linear-gradient(135deg, #192a3e, #405b70);
+  color: #ffffff;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #172334 #11202b;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #11202b;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #172334;
+}
+
+img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.app {
+  padding: 2rem;
+  background-color: #283848;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #fca311;
+  opacity: 0;
+  animation: fadeIn 1s forwards 0.5s;
+}
+
+input {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #192a3e;
+  width: 100%;
+  max-width: 320px;
+  padding: 1.5rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  border: 2px solid #fca311;
+  transition: border-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1s;
+}
+
+input:focus {
+  border-color: #e5c100;
+}
+
+button,
+a {
+  appearance: none;
+  outline: none;
+  border: none;
+  background: #fca311;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.8rem;
+  text-decoration: none;
+  padding: 1.5rem 3rem;
+  border-radius: 1.5rem;
+  transition: background-color 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1s forwards 1.5s;
+}
+
+button:hover,
+a:hover {
+  background-color: #e5c100;
+}
+
+.qr-code-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1f2933, #2d3e4f);
+  border-radius: 1.5rem;
+  display: inline-block;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fadeIn 1s forwards 2s;
+}
+
+.qr-code {
+  width: 250px;
+  height: 250px;
+  border: 10px solid #fca311;
+  border-radius: 1.5rem;
+  opacity: 0;
+  animation: fadeIn 1s forwards 2.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

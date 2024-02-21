@@ -9,4 +9,5 @@ run the following comments after creating a empty folder
 5.select the variant :javascript
 6.npm install
 7.npm i qrcode
+8.npm run dev
 
